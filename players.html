@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Players - Retro Rumble</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,28 +13,55 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="players.html">Players</a></li>
-                <li><a href="events.html">Previous Events</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="previousevents.html">Previous Events</a></li>
+                <li><a href="aboutretrorumble.html">About</a></li>
                 <li><a href="games.html">Games</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="players-list">
-            <h2>Meet the Players</h2>
-            <div class="player-card">
-                <img src="images/player1.jpg" alt="Player 1">
-                <p><strong>Player 1</strong></p>
-                <a href="player1-profile.html">View Profile</a>
+        <section id="players">
+            <h2>Players</h2>
+            <input type="text" id="playerSearch" placeholder="Search players..." onkeyup="searchPlayers()">
+            <div id="playerList">
+                <!-- Player entries will be populated here dynamically -->
+                <a href="players/player1.html" class="player-entry">
+                    <div class="player-card">
+                        <img src="images/player1.jpg" alt="Player 1">
+                        <p>Player 1</p>
+                    </div>
+                </a>
+                <a href="players/player2.html" class="player-entry">
+                    <div class="player-card">
+                        <img src="images/player2.jpg" alt="Player 2">
+                        <p>Player 2</p>
+                    </div>
+                </a>
+                <!-- More players can be added here in the same format -->
             </div>
-            <!-- Repeat this for each player -->
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Island Games: Retro Rumble. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Search function for players
+        function searchPlayers() {
+            let searchQuery = document.getElementById('playerSearch').value.toLowerCase();
+            let players = document.querySelectorAll('.player-entry');
+            
+            players.forEach(player => {
+                let playerName = player.querySelector('p').innerText.toLowerCase();
+                if (playerName.includes(searchQuery)) {
+                    player.style.display = 'block';
+                } else {
+                    player.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
