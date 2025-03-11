@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games - Retro Rumble</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,22 +14,31 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="players.html">Players</a></li>
-                <li><a href="events.html">Previous Events</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="games.html">Games</a></li>
+                <li><a href="previousevents.html">Previous Events</a></li>
+                <li><a href="aboutretrorumble.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="games-list">
+        <section id="games">
             <h2>Games</h2>
-            <div class="game-card">
-                <h3>On the Point</h3>
-                <p><strong>Record:</strong> Player 1: 500 points</p>
-                <a href="game1.html">View Game Details</a>
+            <div id="gameList">
+                <!-- Game entries will be populated here dynamically -->
+                <a href="games/game1.html" class="game-entry">
+                    <div class="game-card">
+                        <img src="images/game1.jpg" alt="Game 1">
+                        <p>Game 1: On the Point</p>
+                    </div>
+                </a>
+                <a href="games/game2.html" class="game-entry">
+                    <div class="game-card">
+                        <img src="images/game2.jpg" alt="Game 2">
+                        <p>Game 2: Timeless Trials</p>
+                    </div>
+                </a>
+                <!-- More games can be added here in the same format -->
             </div>
-            <!-- Repeat for each game -->
         </section>
     </main>
 
