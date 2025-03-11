@@ -20,64 +20,62 @@
         </nav>
     </header>
 
-    <main>
-        <section id="playerProfile">
-            <h2>Killz</h2>
+    <main class="player-container">
+        <!-- Player Profile Card -->
+        <div class="player-card">
             <img src="../images/Killz.png" alt="Player 1" class="player-image">
+            <h2>Player 1</h2>
+            <p class="team-badge red-team">Team: Red</p>
+        </div>
 
-            <!-- Stats Sheet -->
-            <h3>Stats</h3>
+        <!-- Stats Sheet -->
+        <section class="stats-section">
+            <h3>Player Stats</h3>
             <table class="stats-table">
-                <tr>
-                    <th>Wins</th>
-                    <th>Games Played</th>
-                    <th>Avg. Points</th>
-                    <th>Best Game</th>
-                    <th>Play Style</th>
-                    <th>Highest Points Scored</th>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>None</td>
-                    <td>None</td>
-                    <td>None</td>
-                </tr>
+                <tr><th>Wins</th><td>5</td></tr>
+                <tr><th>Games Played</th><td>12</td></tr>
+                <tr><th>Average Points</th><td>145</td></tr>
+                <tr><th>Best Game</th><td>Death Games</td></tr>
+                <tr><th>Play Style</th><td>Aggressive</td></tr>
+                <tr><th>Highest Scored Points</th><td>230</td></tr>
             </table>
+        </section>
 
-            <!-- Events Sheet -->
+        <!-- Events Sheet -->
+        <section class="events-section">
             <h3>Events Participated In</h3>
             <table class="events-table">
                 <tr>
                     <th>Event</th>
-                    <th>Finals</th>
-                    <th>Won</th>
+                    <th>Finals?</th>
+                    <th>Won?</th>
                     <th>Team Points</th>
-                    <th>Individual Points</th>
+                    <th>Personal Points</th>
                 </tr>
                 <tr>
                     <td><a href="../previousevents.html#event1">Event 1</a></td>
-                    <td>✔</td>
-                    <td>✔</td>
-                    <td>300</td>
-                    <td>120</td>
+                    <td>✅</td>
+                    <td>🏆 Yes</td>
+                    <td>500</td>
+                    <td>160</td>
                 </tr>
                 <tr>
                     <td><a href="../previousevents.html#event2">Event 2</a></td>
-                    <td>✔</td>
-                    <td>✖</td>
-                    <td>250</td>
-                    <td>90</td>
+                    <td>❌</td>
+                    <td>No</td>
+                    <td>420</td>
+                    <td>135</td>
                 </tr>
             </table>
+        </section>
 
-            <!-- Socials -->
+        <!-- Socials -->
+        <section class="socials-section">
             <h3>Socials</h3>
-            <div class="socials">
-                <a href="https://twitter.com/player1" class="social-btn">Twitter</a>
-                <a href="https://instagram.com/player1" class="social-btn">Instagram</a>
-            </div>
+            <ul class="socials-list">
+                <li><a href="https://twitter.com/player1">Twitter</a></li>
+                <li><a href="https://instagram.com/player1">Instagram</a></li>
+            </ul>
         </section>
     </main>
 
