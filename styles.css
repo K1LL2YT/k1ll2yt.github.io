@@ -28,6 +28,7 @@ nav a {
     color: #f0a500;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -37,7 +38,7 @@ nav a:hover {
 /* Players Grid */
 .players-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     justify-content: center;
     padding: 20px;
@@ -47,13 +48,15 @@ nav a:hover {
 .player-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 
 .player-card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Player Image */
@@ -61,6 +64,7 @@ nav a:hover {
     width: 150px;
     height: 150px;
     border-radius: 10px;
+    border: 3px solid white;
 }
 
 /* Player Name Link */
@@ -73,15 +77,15 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* Player Image */
+/* Player Profile Image */
 .player-image {
-    width: 250px; /* Adjust size */
-    height: auto; /* Keep aspect ratio */
+    width: 250px;
+    height: auto;
     display: block;
     margin: 20px auto;
-    border-radius: 20px; /* Rounded edges */
-    border: 4px solid white; /* White border */
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+    border-radius: 20px;
+    border: 4px solid white;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
 }
 
 /* Tables */
@@ -93,6 +97,7 @@ nav a:hover {
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
 .stats-table th, .stats-table td,
@@ -104,6 +109,7 @@ nav a:hover {
 .stats-table th, .events-table th {
     background: rgba(255, 255, 255, 0.2);
     font-size: 18px;
+    color: #ffcd3c;
 }
 
 .stats-table td, .events-table td {
@@ -140,13 +146,14 @@ nav a:hover {
     opacity: 0.8;
 }
 
-.social-btn:nth-child(1) { background: #1DA1F2; color: white; } /* Twitter */
-.social-btn:nth-child(2) { background: #E4405F; color: white; } /* Instagram */
+.twitter { background: #1DA1F2; color: white; } /* Twitter */
+.instagram { background: #E4405F; color: white; } /* Instagram */
 
-
-
+/* Section Headers */
 h2 {
     color: #ffcd3c;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 /* Team Color Styling */
@@ -155,37 +162,10 @@ h2 {
     font-weight: bold;
 }
 
-/* Social Buttons */
-.social-links {
-    margin-top: 10px;
-}
-
-.social-btn {
-    display: inline-block;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.twitter {
-    background-color: #1da1f2;
-    color: white;
-}
-
-.instagram {
-    background-color: #e4405f;
-    color: white;
-}
-
-.social-btn:hover {
-    opacity: 0.8;
-}
-
 /* Footer */
 footer {
     background-color: #0f3460;
     padding: 10px;
     margin-top: 20px;
+    font-size: 14px;
 }
