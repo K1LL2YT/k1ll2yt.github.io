@@ -74,26 +74,76 @@ nav a:hover {
 }
 
 
+/* Player Image */
+.player-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
 /* Tables */
 .stats-table, .events-table {
     width: 80%;
-    max-width: 600px;
     margin: 20px auto;
     border-collapse: collapse;
     background: rgba(255, 255, 255, 0.1);
-    color: white;
+    border-radius: 15px;
+    overflow: hidden;
     text-align: center;
 }
 
-.stats-table th, .events-table th,
-.stats-table td, .events-table td {
-    border: 2px solid white;
-    padding: 10px;
+.stats-table th, .stats-table td,
+.events-table th, .events-table td {
+    padding: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .stats-table th, .events-table th {
     background: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
 }
+
+.stats-table td, .events-table td {
+    font-size: 16px;
+}
+
+.stats-table tr:last-child td, 
+.events-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hover Effect */
+.stats-table tr:hover, .events-table tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Social Buttons */
+.socials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+.social-btn:nth-child(1) { background: #1DA1F2; color: white; } /* Twitter */
+.social-btn:nth-child(2) { background: #E4405F; color: white; } /* Instagram */
+
 
 
 h2 {
