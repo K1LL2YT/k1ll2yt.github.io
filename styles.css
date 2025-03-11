@@ -8,7 +8,6 @@ body {
     padding: 0;
 }
 
-/* Header */
 header {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -32,13 +31,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Intro Section */
-#intro {
-    padding: 50px 20px;
-    font-size: 1.2rem;
-}
-
-/* Navigation Buttons */
 .nav-buttons {
     display: flex;
     justify-content: center;
@@ -60,11 +52,4 @@ nav ul li a {
 .button:hover {
     background: #ff884d;
     transform: scale(1.1);
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
 }
