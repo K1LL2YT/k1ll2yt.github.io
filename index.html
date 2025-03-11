@@ -23,25 +23,44 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section id="intro" class="animated-section">
-            <h2>Welcome to Retro Rumble!</h2>
+        <section id="hero" class="hero-section">
+            <h1>Welcome to Retro Rumble!</h1>
             <p>A thrilling Minecraft tournament with intense challenges and epic competition!</p>
-            <div id="countdown" class="countdown-timer">Coming Soon!</div>
+            <div class="hero-image">
+                <img src="images/tournament-promo.jpg" alt="Tournament Promo Image">
+            </div>
         </section>
-        
-        <section id="navigation" class="animated-section">
-            <h2>Explore</h2>
-            <div class="nav-buttons">
-                <a href="players.html" class="button">View Players</a>
-                <a href="previousevents.html" class="button">Past Events</a>
-                <a href="aboutretrorumble.html" class="button">About Retro Rumble</a>
-                <a href="games.html" class="button">Game List</a>
+
+        <section id="next-event" class="event-preview">
+            <h2>Next Event: <span id="event-name">Coming Soon</span></h2>
+            <p id="event-description">Check out what will be happening in the next tournament event!</p>
+            <div id="countdown" class="countdown-timer">Coming Soon!</div>
+            <div class="event-preview-image">
+                <img src="images/next-event.jpg" alt="Next Event Preview">
+            </div>
+        </section>
+
+        <section id="navigation" class="navigation-section">
+            <h2>Explore the Tournament</h2>
+            <div class="button-container">
+                <a href="players.html" class="btn-img" style="background-image: url('images/players-button.jpg');">
+                    <span>View Players</span>
+                </a>
+                <a href="previousevents.html" class="btn-img" style="background-image: url('images/events-button.jpg');">
+                    <span>Past Events</span>
+                </a>
+                <a href="aboutretrorumble.html" class="btn-img" style="background-image: url('images/about-button.jpg');">
+                    <span>About Retro Rumble</span>
+                </a>
+                <a href="games.html" class="btn-img" style="background-image: url('images/games-button.jpg');">
+                    <span>Game List</span>
+                </a>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <p>&copy; 2025 Island Games: Retro Rumble. All rights reserved.</p>
     </footer>
