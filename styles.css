@@ -1,18 +1,17 @@
 /* General Styles */
 body {
-    font-family: 'Press Start 2P', sans-serif;
-    background: linear-gradient(to bottom, #ff66b2, #6699ff, #9966ff, #ffcc66, #ff884d);
-    color: white;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
+/* Header & Navigation */
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background-color: #0f3460;
     padding: 20px;
-    font-size: 1.5rem;
-    text-transform: uppercase;
 }
 
 nav ul {
@@ -25,31 +24,76 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+nav a {
+    color: #f0a500;
     text-decoration: none;
     font-weight: bold;
 }
 
-.nav-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+nav a:hover {
+    color: #ffcd3c;
 }
 
-.button {
-    background: #ffcc66;
-    color: black;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
+/* Player Card */
+.player-card {
+    background-color: #16213e;
+    padding: 20px;
     border-radius: 10px;
-    transition: transform 0.2s, background 0.3s;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.button:hover {
-    background: #ff884d;
-    transform: scale(1.1);
+.player-card img {
+    width: 150px; /* Set fixed image size */
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #f0a500;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #ffcd3c;
+}
+
+/* Team Color Styling */
+.team-red {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Social Buttons */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.twitter {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.instagram {
+    background-color: #e4405f;
+    color: white;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: #0f3460;
+    padding: 10px;
+    margin-top: 20px;
 }
