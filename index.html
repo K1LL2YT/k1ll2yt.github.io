@@ -10,7 +10,9 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Retro Rumble Logo" class="logo">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Retro Rumble Logo" class="logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-btn">Home</a></li>
@@ -23,18 +25,18 @@
     </header>
     
     <main>
-        <section id="intro">
+        <section id="intro" class="animated-section">
             <h2>Welcome to Retro Rumble!</h2>
             <p>A thrilling Minecraft tournament with intense challenges and epic competition!</p>
-            <p><strong>Next Event:</strong> Coming Soon!</p>
+            <div id="countdown" class="countdown-timer">Coming Soon!</div>
         </section>
         
-        <section id="navigation">
+        <section id="navigation" class="animated-section">
             <h2>Explore</h2>
             <div class="nav-buttons">
                 <a href="players.html" class="button">View Players</a>
-                <a href="events.html" class="button">Past Events</a>
-                <a href="about.html" class="button">About Retro Rumble</a>
+                <a href="previousevents.html" class="button">Past Events</a>
+                <a href="aboutretrorumble.html" class="button">About Retro Rumble</a>
                 <a href="games.html" class="button">Game List</a>
             </div>
         </section>
