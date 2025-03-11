@@ -34,6 +34,13 @@ nav a:hover {
     color: #ffcd3c;
 }
 
+.player-card img {
+     width: 150px; /* Set fixed image size */
+     height: 150px;
+     border-radius: 50%;
+     border: 3px solid #f0a500;
+     object-fit: cover;
+     margin-bottom: 15px;
 /* Player Card */
 .player-card {
     background-color: #16213e;
