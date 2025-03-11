@@ -44,14 +44,36 @@ nav a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.player-card img {
-    width: 150px; /* Set fixed image size */
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #f0a500;
-    object-fit: cover;
-    margin-bottom: 15px;
+/* Player Image */
+.player-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
 }
+
+/* Tables */
+.stats-table, .events-table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+}
+
+.stats-table th, .events-table th,
+.stats-table td, .events-table td {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.stats-table th, .events-table th {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 
 h2 {
     color: #ffcd3c;
