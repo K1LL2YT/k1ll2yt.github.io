@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Players - Retro Rumble</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,6 +12,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
                 <li><a href="previousevents.html">Previous Events</a></li>
                 <li><a href="aboutretrorumble.html">About</a></li>
                 <li><a href="games.html">Games</a></li>
@@ -21,47 +21,36 @@
     </header>
 
     <main>
-        <section id="players">
-            <h2>Players</h2>
-            <input type="text" id="playerSearch" placeholder="Search players..." onkeyup="searchPlayers()">
-            <div id="playerList">
-                <!-- Player entries will be populated here dynamically -->
-                <a href="playerspage/player1.html" class="player-entry">
-                    <div class="player-card">
-                        <img src="images/Killz.png" alt="Killz">
-                        <p>Player 1</p>
-                    </div>
+        <h2>Players</h2>
+        <div class="players-grid">
+            <!-- Player 1 -->
+            <div class="player-card">
+                <a href="players/player1.html">
+                    <img src="images/Killz.png" alt="Player 1">
+                    <h3>Player 1</h3>
                 </a>
-                <a href="playerspage/player2.html" class="player-entry">
-                    <div class="player-card">
-                        <img src="images/player2.jpg" alt="Player 2">
-                        <p>Player 2</p>
-                    </div>
-                </a>
-                <!-- More players can be added here in the same format -->
+                <p><strong>Wins:</strong> 5</p>
+                <p><strong>Games Played:</strong> 12</p>
+                <p><strong>Last Played:</strong> <a href="previousevents.html#event2">Event 2</a></p>
             </div>
-        </section>
+
+            <!-- Player 2 -->
+            <div class="player-card">
+                <a href="players/player2.html">
+                    <img src="images/player2.png" alt="Player 2">
+                    <h3>Player 2</h3>
+                </a>
+                <p><strong>Wins:</strong> 3</p>
+                <p><strong>Games Played:</strong> 8</p>
+                <p><strong>Last Played:</strong> <a href="previousevents.html#event1">Event 1</a></p>
+            </div>
+
+            <!-- More players... -->
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Island Games: Retro Rumble. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Search function for players
-        function searchPlayers() {
-            let searchQuery = document.getElementById('playerSearch').value.toLowerCase();
-            let players = document.querySelectorAll('.player-entry');
-            
-            players.forEach(player => {
-                let playerName = player.querySelector('p').innerText.toLowerCase();
-                if (playerName.includes(searchQuery)) {
-                    player.style.display = 'block';
-                } else {
-                    player.style.display = 'none';
-                }
-            });
-        }
-    </script>
 </body>
 </html>
